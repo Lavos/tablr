@@ -119,7 +119,7 @@ var Tablr = (function(){
 
 				_.each(self.prop_list, function(prop){
 					var cell = document.createElement('td');
-					var value = model.get(prop) || 'NULL';
+					var value = (model.get(prop) === null ? 'NULL' : model.get(prop));
 					cell.innerHTML = value;
 					row.appendChild(cell);
 				});
