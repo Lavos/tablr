@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>front end code test</title>
+
+	<style type="text/css">
+		.tablr { }
+			.tablr table { border: 1px solid #ccc; border-collapse: collapse; } 
+
+			.tablr table td,
+			.tablr table th { border: 1px solid #ccc; padding: 3px; margin: 0; } 
+
+			.tablr table thead th[data-property] { cursor: pointer; background-color: #efefef; }
+			.tablr table thead td { background-color: #efefef; }
+	</style>
+</head>
+
+<body>
+	<div id="master">
+		<h3>Harry Potter Characters</h3>
+		<div id="target"></div><!-- /#target -->
+	</div><!-- /#master -->
+
+	<script src="jquery.js"></script>
+	<script src="underscore.js"></script>
+	<script src="blocks.js"></script>
+	<script src="tablr.js"></script>
+
+	<script>
+		(function(){
+			var myTablr = new Tablr({
+				target: $('#target'),
+				display_groups: {
+					name: ['prefix', 'first', 'last'],
+					features: ['gender', 'height', 'weight', 'age', 'has_nose']
+				},
+				aggregrate: {
+					height: 'average',
+					weight: 'average',
+					age: 'sum'
+				}
+			});
+
+			$.ajax({
+				type: 'GET',
+				dataType: 'json',
+				url: 'characters.json',
+				success: function(data){
+					myTablr.ingest(data);
+				}
+			});
+		})();
+	</script>
+</body>
+</html>

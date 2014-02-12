@@ -1,0 +1,9 @@
+[
+	{ "prefix": "Mr.", "first": "Harry", "last": "Potter", "gender": "m", "height": 70, "weight": 140, "age": 19, "has_nose": true },
+	{ "prefix": "Ms.", "first": "Hermione", "last": "Granger", "gender": "f", "height": 66, "weight": 121, "age": 19, "has_nose": true },
+	{ "prefix": null, "first": "Dobby", "last": null, "gender": "m", "height": 23, "weight": 20, "age": 284, "has_nose": true },
+	{ "prefix": "Ms.", "first": "Luna", "last": "Lovegood", "gender": "f", "height": 68, "weight": 99, "age": 17, "has_nose": true },
+	{ "prefix": null, "first": "Hagrid", "last": null, "gender": "m", "height": 108, "weight": 553, "age": 45, "has_nose": true },
+	{ "prefix": "Dark Lord", "first": "Tom", "last": "Riddle", "gender": "m", "height": 74, "weight": 144, "age": 48, "has_nose": false },
+	{ "prefix": "Moaning Myrtle", "first": "Myrtle", "last": null, "gender": "f", "height": 65, "weight": 0, "age": 106, "has_nose": null }
+]
