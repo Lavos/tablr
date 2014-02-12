@@ -162,9 +162,9 @@ var Tablr = (function(){
 				value_row.appendChild(value_cell);
 			});
 
-			this.element.innerHTML = '';
-			this.element.appendChild(header_row);
-			this.element.appendChild(value_row);
+			self.element.innerHTML = '';
+			self.element.appendChild(header_row);
+			self.element.appendChild(value_row);
 		}
 	});
 
